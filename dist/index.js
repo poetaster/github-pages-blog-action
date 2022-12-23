@@ -335,6 +335,9 @@ function prepareTheme(configuration) {
                     fs_1.default.writeFileSync(path_1.default.join(outputDir, nestedPostDir, `${fileName}.html`), populatedTemplate);
                     posts.push(postMeta);
                 }
+                posts.sort(function(a, b){
+                  return new Date(a.date) - new Date(b.date);
+                });
                 return posts;
             });
         }
