@@ -34,13 +34,6 @@ type SiteConfigType = {
   };
   social: {
     github: string;
-    twitter: string;
-    medium: string;
-  };
-  newsletter: {
-    showTwitterBanner?: boolean;
-    currentCount: string;
-    revueUsername: string;
   };
   seo: {
     title: string;

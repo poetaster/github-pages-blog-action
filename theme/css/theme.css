@@ -414,14 +414,6 @@
     color: #333 !important
 }
 
-.link-medium:hover {
-    color: #00AB72 !important
-}
-
-.link-twitter:hover {
-    color: #00A3EC !important
-}
-
 .link-email:hover {
     color: #FF554A !important
 }
@@ -782,24 +774,6 @@ pre .lineno {
     display: flex;
     flex-direction: column;
     background-color: #FAFAFA
-}
-
-#mc_embed_signup.twitter-signup {
-    background: #ffa;
-    border: none;
-    font-size: 16px;
-}
-
-.twitter-signup-text {
-    text-align: center;
-    color: black;
-}
-
-.twitter-signup-text a {
-    font-weight: 600;
-    color: #3939bd;
-    text-decoration: none;
-    border-bottom: 1px solid blue;
 }
 
 .mc-title-container {
