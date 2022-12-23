@@ -1,4 +1,4 @@
-name: 'Create Blog from Markdown Files'
+name: 'Create Blog from Markdown Files - cowtrix'
 description: 'This action allows you to create a blog from your markdown files and deploy to GitHub pages'
 author: 'Kamran Ahmed <kamranahmed.se@gmail.com>'
 runs:
