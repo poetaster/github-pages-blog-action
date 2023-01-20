@@ -433,7 +433,7 @@
 
 body {
     margin: auto;
-    max-width: 39rem;
+    max-width: 85%;
     padding: 1rem;
     background-color: #fff;
     color: #333;
@@ -648,6 +648,10 @@ footer {
     color: #888;
     margin: .5rem 0;
     font-size: 1.25rem
+}
+
+.about__description p {
+    color: black;
 }
 
 .section__title {
