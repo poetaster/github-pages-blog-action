@@ -126,6 +126,19 @@ export async function prepareTheme(configuration: ConfigurationType) {
     return posts;
   }
 
+  async function prepareNl() {
+    info('Preparing nl page');
+    const aboutContent = fs.readFileSync(path.join(repoPath, 'nl.md'), 'utf-8');
+    const html = htmlConverter.makeHtml(aboutContent);
+
+    const populatedTemplate = await ejs.renderFile(path.join(themePath, 'nl.ejs'), {
+      siteConfig,
+      html
+    });
+
+    fs.writeFileSync(path.join(outputDir, 'nl.html'), populatedTemplate);
+  }
+
   async function prepareAbout() {
     info('Preparing about page');
     const aboutContent = fs.readFileSync(path.join(repoPath, 'about.md'), 'utf-8');
@@ -177,6 +190,7 @@ export async function prepareTheme(configuration: ConfigurationType) {
 
   await prepareThemeFiles();
   await prepareAbout();
+  await prepareNl();
   await prepareStaticPages();
   const posts = await prepareBlogPosts();
   await prepareHome(posts);
