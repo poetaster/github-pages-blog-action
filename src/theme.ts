@@ -128,8 +128,8 @@ export async function prepareTheme(configuration: ConfigurationType) {
 
   async function prepareNl() {
     info('Preparing nl page');
-    const aboutContent = fs.readFileSync(path.join(repoPath, 'nl.md'), 'utf-8');
-    const html = htmlConverter.makeHtml(aboutContent);
+    const nlContent = fs.readFileSync(path.join(repoPath, 'nl.md'), 'utf-8');
+    const html = htmlConverter.makeHtml(nlContent);
 
     const populatedTemplate = await ejs.renderFile(path.join(themePath, 'nl.ejs'), {
       siteConfig,
